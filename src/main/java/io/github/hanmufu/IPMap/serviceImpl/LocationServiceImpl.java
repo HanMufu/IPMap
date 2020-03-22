@@ -1,6 +1,7 @@
 package io.github.hanmufu.IPMap.serviceImpl;
 
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.JSONArray;
 import io.github.hanmufu.IPMap.service.LocationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -18,15 +19,16 @@ public class LocationServiceImpl implements LocationService {
 
     @Override
     public String retrieveLocationHistory(String IPAddress, long startDate, long endDate, int lastN) {
+        JSONArray responseArray = new JSONArray();
         JSONObject responseData = new JSONObject();
         Date inputStartDate = new Date(startDate);
         Date inputEndDate = new Date(endDate);
         System.out.println(IPAddress + ", " + inputStartDate + ", " + inputEndDate + ", " + lastN);
         List<Record> res = ipLocationDao.findIPAddress(IPAddress, inputStartDate, inputEndDate, lastN);
-        int counter = 0;
         for(Record r : res) {
-            responseData.put("" + counter++, recordToJson(r));
+            responseArray.add(recordToJson(r));
         }
+        responseData.put("records", responseArray);
         return responseData.toJSONString();
     }
 
