@@ -17,12 +17,15 @@ Other things I did:
  
 **I have recorded a demo video for my project, please check it out [here](https://youtu.be/HB9C06dwzZo).**
 
-## Screenshot for frontend:
+## Project's structure: 
+<img src="https://raw.githubusercontent.com/HanMufu/IPMap/master/IPMap_codeStructure.png" width="80%" height="80%">
+
+## Web page:
 <img src="https://raw.githubusercontent.com/HanMufu/IPMap/master/IPMap_frontend.png" width="80%" height="80%">
 
-## Screenshot for text message:
+## Text message:
 <img src="https://raw.githubusercontent.com/HanMufu/IPMap/master/IPMap_text.jpeg" width="20%" height="20%">
 
-## Screenshot for Postman:
+## Postman:
 <img src="https://raw.githubusercontent.com/HanMufu/IPMap/master/IPMap_postman.png" width="80%" height="80%">
 
