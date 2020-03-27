@@ -1,6 +1,6 @@
 # IPMap
 
-This is a Spring Boot application. This project only contains backend codes, please check out frontend [here](https://github.com/HanMufu/IPMap_frontend). 
+This is a Spring Boot application. This project only contains backend codes, please check out frontend [here](https://github.com/HanMufu/IP-Address-Map-Vue). 
 
 This project implements:
  - A clear project structure with Controller, Service and DAO
